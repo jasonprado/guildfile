@@ -1,6 +1,6 @@
 # Guildfile Schema
 
-Guildfile's CUE schema lives in this directory and is exported under the module `github.com/jasonprado/guildfile`. Downstream configs can depend on `github.com/jasonprado/guildfile/schema` and access the `Channel`, `Guild`, and `GuildfileDoc` definitions without copying types.
+Guildfile's CUE schema lives in this directory and is exported under the module `github.com/jasonprado/guildfile`. Downstream configs can depend on `github.com/jasonprado/guildfile/schema` and access reusable definitions for channels, roles, emojis, stickers, welcome screens, and guild metadata without duplicating types.
 
 ## Versioning
 
