@@ -1,0 +1,32 @@
+{
+  "name": "guildfile",
+  "version": "1.0.0",
+  "description": "Declarative Discord server configuration powered by CUE and discord.js.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "guildfile": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "dev": "tsx src/cli/index.ts",
+    "example:basic": "tsx src/cli/index.ts apply --config examples/basic/guild.cue --env dev",
+    "lint": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^2.6.0",
+    "discord-api-types": "^0.38.35",
+    "discord.js": "^14.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
